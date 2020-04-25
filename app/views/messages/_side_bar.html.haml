@@ -1,0 +1,12 @@
+.chat-side
+  .side--header
+    .side---box
+      %p.user-name menu
+      %ul.menu
+        %li.new-group
+        = link_to "#", class: "contents__btn contents__new" do
+          %i.fa.fa-edit
+        %li.edit-user 
+        = link_to "#", class: "contents__btn contents__edit" do
+          %i.fa.fa-cog
+  .groups
