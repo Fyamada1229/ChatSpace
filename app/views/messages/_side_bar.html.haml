@@ -1,12 +1,18 @@
 .chat-side
-  .side--header
-    .side---box
-      %p.user-name menu
-      %ul.menu
-        %li.new-group
-        = link_to "#", class: "contents__btn contents__new" do
-          %i.fa.fa-edit
-        %li.edit-user 
-        = link_to "#", class: "contents__btn contents__edit" do
-          %i.fa.fa-cog
+  .side-header
+    .side-header__box
+      %p.side-header__box__username
+        山田
+      %ul.side-header__box__menu
+        %li.side-header__box__edit-user
+          = link_to "#" do
+            = icon('fas','edit')
+        %li.side-header__box__user-group
+          = link_to "#" do
+            = icon('fas','cog')
   .groups
+    = link_to "#", class:"group" do
+      %p.group_group-name
+        name
+      %p.group_latest-message
+        まだメッセージがありません
