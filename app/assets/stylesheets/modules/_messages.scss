@@ -6,7 +6,6 @@
 
 .wrapper {
   display: flex;
-  height: 100vh;
   .chat-main {
     width: calc(100% - 300px); 
     background-color:#fafafa ;
@@ -25,7 +24,6 @@
         margin-bottom: 15px;
         font-size: 20px;
       }
-
       a {
         text-decoration: none;
         .edit-btn{
@@ -36,7 +34,6 @@
           border: 1px solid #38aef0;
         }
       }
-
       .member-list{
         font-size: 12px;
         color: #999999;
@@ -46,15 +43,8 @@
           margin-left: 5px;
         }
       }
-
-    
-    .main-form{
-      height: 90px;
-      background-color: #d2d2d2;
-        }
     }
   }
-  
   /* メインメッセージ */
   .messages{
     background-color: #fafafa;
@@ -102,6 +92,42 @@
       }
     }
   }
+
+  /* フォーム */
+  .form {
+    background-color: #DDDDDD;
+    box-sizing: border-box;
+    height: 90px;
+    padding: 20px 50px 20px 40px;
+  }
+  .form__message{
+    border: none;
+    float: left;
+    height: 50px;
+    width: calc(100% - 150px);
+  }
+  .form__mask{
+    background-color: white;
+    float: left;
+    height: 50px;
+    padding-right: 10px;
+  }
+  .form__mask__image{
+    font-size: 20px;
+    line-height: 50px;
+  }
+  .hidden {
+    display: none;
+  }
+  .form__submit{
+    background-color: skyblue;
+    color: white;
+    float: right;
+    font-size: 16px;
+    height: 50px;
+    margin-left: 15px;
+    padding: 0 30px;
+  }
   
   /* サイド */
   .chat-side {
@@ -122,11 +148,9 @@
         color: white;
         font-size: 16px;
       }
-
         &__menu{  
           display: flex;
         }
-
         &__edit-user{
           margin-right: 5px;
             a {
@@ -143,20 +167,23 @@
   }
 }
 
+/* サイドグループ */
 .groups {
   background-color: #2f3e51;
   height: calc(100vh - 100px);
-  padding: 20px;
+  padding: 20px 20px 0;
+  box-sizing: border-box;
   .group{
     color: white;
     text-decoration: none;
-    margin-bottom: 40px;
     .group_group-name{
+      margin-top: 20px;
       font-size: 15px;
       margin-bottom: 5px;
     }
     .group_latest-message{
       font-size: 11px;
+      margin-bottom: 40px;
     }
   }
 }
