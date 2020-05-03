@@ -1,0 +1,40 @@
+.chat-main
+
+  .main-header
+    .header-leftbox
+      %h2.current-group
+        text
+      %ul.member-list
+        Member :
+        %li.member-first
+          test
+    = link_to "#" do
+      .edit-btn
+        Edit
+
+  .messages
+    .message-top
+      %h2.message-group
+        yamada
+      %ul.message-list
+        2020/04/28(tuesday)17:00
+    .message-center
+      %h2.message-first
+        おはよう！
+    .message-under
+      %h2.message-under__first
+        yamada
+      %ul.message-under__list
+        2020/04/28(tuesday)18:00
+    .message-following
+      %h2.message-following__list
+        今日の夜から雨
+
+  .form
+    %form
+      %input.form__message
+      .form__mask
+        %label.form__mask__image
+          = icon('fa','image',class: 'icon')
+          %input.hidden{type: 'file'}
+      %input.form__submit{type: 'submit', value: 'Send'}
