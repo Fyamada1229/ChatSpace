@@ -173,17 +173,19 @@
   height: calc(100vh - 100px);
   padding: 20px 20px 0;
   box-sizing: border-box;
-  .group{
-    color: white;
-    text-decoration: none;
-    .group_group-name{
+  text-decoration: none;
+    .group__name{
       margin-top: 20px;
       font-size: 15px;
       margin-bottom: 5px;
+      color: white;
+      text-decoration: none;
     }
-    .group_latest-message{
+    .group__message{
       font-size: 11px;
       margin-bottom: 40px;
+      color: white;
+      text-decoration: none;
     }
   }
-}
+
