@@ -231,17 +231,9 @@ DEPENDENCIES
   capybara (>= 2.15)
   chromedriver-helper
   coffee-rails (~> 4.2)
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
   devise
   font-awesome-sass
   haml-rails
->>>>>>> Stashed changes
-=======
-  font-awesome-sass
-  haml-rails
->>>>>>> eb46d0d75bc11fb43fb26e46bb5383d3c50cdd69
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
   mysql2 (>= 0.4.4, < 0.6.0)
