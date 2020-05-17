@@ -1,5 +1,7 @@
 .chat-main
 
+
+
   .main-header
     .header-leftbox
       %h2.current-group
@@ -11,6 +13,10 @@
     = link_to "#" do
       .edit-btn
         Edit
+
+
+  .messages
+    = render @messages
 
   .messages
     .message-top
@@ -30,11 +36,13 @@
       %h2.message-following__list
         今日の夜から雨
 
+
+
   .form
-    %form
-      %input.form__message
+    = form_for [@group, @message] do |f|
+      = f.text_field :content, class: 'form__message', placeholder: 'type a message'
       .form__mask
-        %label.form__mask__image
-          = icon('fa','image',class: 'icon')
-          %input.hidden{type: 'file'}
-      %input.form__submit{type: 'submit', value: 'Send'}
+        = f.label :image, class: 'form__mask__image' do
+          = icon('fas', 'image', class: 'icon')
+          = f.file_field :image, class: 'hidden'
+      = f.submit 'Send', class: 'form__submit'
