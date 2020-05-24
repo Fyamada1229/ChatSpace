@@ -10,9 +10,10 @@
         Member :
         %li.member-first
           test
-    = link_to "#" do
-      .edit-btn
-        Edit
+          
+    .chat__main__header__edit-button
+      = link_to "Edit", edit_group_path(params[:group_id]), method: :get
+        
 
 
   .messages

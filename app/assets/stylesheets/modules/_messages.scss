@@ -24,15 +24,14 @@
         margin-bottom: 15px;
         font-size: 20px;
       }
-      a {
+      .chat__main__header__edit-button{
         text-decoration: none;
-        .edit-btn{
-          font-size: 16px;
-          color: #38aef0;
-          padding: 15px 20px;
-          margin-right: 40px;
-          border: 1px solid #38aef0;
-        }
+        font-size: 16px;
+        color: #38aef0;
+        padding: 15px 20px;
+        margin-right: 40px;
+        border: 1px solid #38aef0;
+        
       }
       .member-list{
         font-size: 12px;
