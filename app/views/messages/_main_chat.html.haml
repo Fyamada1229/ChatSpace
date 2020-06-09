@@ -1,15 +1,13 @@
 .chat-main
 
-
-
   .main-header
     .header-leftbox
       %h2.current-group
-        text
+        = @group.name
       %ul.member-list
         Member :
         %li.member-first
-          test
+          = current_user.name
           
     .chat__main__header__edit-button
       = link_to "Edit", edit_group_path(params[:group_id]), method: :get

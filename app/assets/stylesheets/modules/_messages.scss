@@ -31,7 +31,9 @@
         padding: 15px 20px;
         margin-right: 40px;
         border: 1px solid #38aef0;
-        
+      }
+      a{
+        text-decoration: none;
       }
       .member-list{
         font-size: 12px;
@@ -137,6 +139,7 @@
           margin-right: 5px;
             a {
               color: white;
+              
             }
           }
         &__user-group{
@@ -167,6 +170,9 @@
       font-size: 11px;
       margin-bottom: 40px;
       color: white;
+      text-decoration: none;
+    }
+    a{
       text-decoration: none;
     }
   }
