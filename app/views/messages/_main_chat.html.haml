@@ -7,7 +7,8 @@
       %ul.member-list
         Member :
         %li.member-first
-          = current_user.name
+          - @group.users.each do |group|
+            = group.name
           
     .chat__main__header__edit-button
       = link_to "Edit", edit_group_path(params[:group_id]), method: :get
