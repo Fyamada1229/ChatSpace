@@ -25,11 +25,15 @@
         font-size: 20px;
       }
       .chat__main__header__edit-button{
-        text-decoration: none;
         font-size: 16px;
-        color: #38aef0;
-        padding: 10px 10px;
+        padding-right: 20px;
+        padding-left: 20px;
+        height: 40px;
+        line-height: 40px;
         border: 1px solid #38aef0;
+        a {
+          color: #38aef0;
+        }
       }
       a{
         text-decoration: none;
@@ -78,38 +82,45 @@
 
   /* フォーム */
   .form {
-    background-color: #DDDDDD;
-    box-sizing: border-box;
     height: 90px;
-    padding: 20px 50px 20px 40px;
+    background-color: #ddd;
+    padding: 20px 40px;
+    form {
+      display: flex;
+      line-height: 50px;
+      .form__mask{
+        display: flex;
+        position: relative;
+        width: 100%;
+      }
+    }
   }
   .form__message{
-    border: none;
-    float: left;
+    padding: 0 10px;
     height: 50px;
-    width: calc(100% - 150px);
-  }
-  .form__mask{
-    background-color: white;
-    float: left;
-    height: 50px;
-    padding-right: 10px;
+    width: 100%;
+    border-style: none;
   }
   .form__mask__image{
     font-size: 20px;
     line-height: 50px;
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
   }
+
   .hidden {
     display: none;
   }
   .form__submit{
-    background-color: skyblue;
+    background-color: #38aef0;
     color: white;
-    float: right;
     font-size: 16px;
     height: 50px;
+    width:100px;
     margin-left: 15px;
     padding: 0 30px;
+    cursor: pointer;
   }
   
   /* サイド */
