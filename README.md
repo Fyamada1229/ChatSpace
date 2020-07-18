@@ -1,5 +1,4 @@
-# カリキュラム課題のアプリ
-
+# カリキュラム課題アプリ
 
 ## messagesテーブル
 |Column|Type|Options|
