@@ -1,4 +1,5 @@
 # カリキュラム課題アプリ
+本番環境　54.95.38.18
 
 ## messagesテーブル
 |Column|Type|Options|
